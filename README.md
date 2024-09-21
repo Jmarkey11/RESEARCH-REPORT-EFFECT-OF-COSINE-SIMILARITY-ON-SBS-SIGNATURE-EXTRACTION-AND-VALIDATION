@@ -1,6 +1,6 @@
 # Single-Base Substitution Signature Extraction in Cancer Genomes
 
-## Introduction
+## Overview
 
 This project investigates genetic mutations, particularly Single-Base Substitutions (SBS), in human cancer genomes. It explores how SBS signatures are extracted using Non-negative Matrix Factorization (NMF) and how cosine similarity impacts the results of this extraction framework. Two primary research questions are addressed:
 
