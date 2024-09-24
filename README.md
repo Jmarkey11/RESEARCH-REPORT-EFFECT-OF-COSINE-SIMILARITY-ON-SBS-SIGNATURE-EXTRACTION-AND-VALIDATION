@@ -12,7 +12,7 @@ This project investigates genetic mutations, particularly Single-Base Substituti
 3. **Non-Negative Matrix Factorization (NMF)**: To extract meaningful patterns (SBS signatures) from the data by decomposing the dataset into non-negative components.
 4. **Cosine Similarity Clustering**: To group similar signatures based on cosine similarity, facilitating the identification of clusters within the data.
 6. **Regression Analysis**: To analyze the relationship between cosine similarity and evaluation metrics, helping to understand the influence of similarity on clustering performance.
-7. **Linear-Combination Method (LCM) Implementation**: To optimize the coefficients of SBS signatures, ensuring a non-negative representation that accurately reflects the data's structure.
+7. **Linear-Combination Method (LCM) Implementation**: A proposed method to enhance the current framework by increasing the certainty of signature identification. Unlike NMF, which decomposes matrices, LCM focuses on solving a coefficient matrix based on known SBS signatures, using supervised machine learning techniques.
 
 ## **Dataset Information**
 The project uses two primary datasets:
