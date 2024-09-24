@@ -36,6 +36,11 @@ Various evaluation metrics were used in this project including:
 
 The evaluation metrics were analyzed through comparative analysis across samples, using summary statistics such as mean, median, standard deviation, and interquartile ranges. Additionally, linear regression models were used to examine the relationships between cosine similarity and each evaluation metric, helping to identify trends and assess the significance of the findings.
 
+## **Results**
+Under the NMF method, the evaluation metrics become less reliable when the genome contains SBS signatures with high cosine similarity. As cosine similarity between signatures increases, the NMF framework often merges highly similar signatures into a single extracted signature rather than separating them. For instance, at a cosine similarity of 0.914, the framework failed to decompose the original signatures, instead combining them. This leads to distortion in evaluation metrics such as silhouette width, intra-cluster distance, and Frobenius Reconstruction Error (FRE%). These metrics, which are used to assess the accuracy and consistency of signature extraction, show greater variability and reduced reliability as the cosine similarity between signatures increases. Silhouette width, for example, becomes less stable, with larger standard deviations and greater discrepancies between mean and median values, indicating less confidence in the extracted clusters.
+
+The Linear Combination Model (LCM) method, however, provides more reliable and consistent signature extraction across all levels of cosine similarity. The LCM improves certainty by assigning higher coefficient values to the correct signatures, even when signatures have a high cosine similarity. Unlike the NMF method, which struggles to separate similar signatures, the LCM is able to decipher and distinguish signatures more effectively, especially in cases of small intra-cluster distances. This consistency across varying cosine similarity levels highlights the LCM's advantage in providing more accurate and dependable results, even in complex genomic datasets.
+
 For a full analysis of the results please refer to the **Results** section of the report found in **`Research_Report.pdf`**.
 
 ## **Technologies Used**
